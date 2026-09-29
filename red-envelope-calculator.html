@@ -1,0 +1,44 @@
+---
+layout: default
+title: "Red Envelope (Hongbao / Lai See) Calculator — How Much to Give | 585555"
+description: "How much money to put in a red envelope for Lunar New Year, weddings, birthdays, staff, clients, grand openings and funerals — lucky amounts in USD, CAD, HKD, SGD, MYR, CNY and more."
+keywords: "how much red envelope, hongbao amount, lai see amount, wedding red envelope how much, chinese new year money amount, red packet calculator"
+type: "WebApplication"
+crumb: "Red Envelope Calculator"
+---
+<div class="phead"><div class="wrap">{% include crumb.html %}<h1>Red Envelope Calculator</h1><p class="lead">The right amount, snapped to lucky numbers, for every occasion — personal and business.</p></div></div>
+<div class="wrap layout">
+<div class="prose">
+  <div class="card">
+    <form id="hbForm">
+      <label for="hbOcc">Occasion</label>
+      <select id="hbOcc">
+        <optgroup label="Lunar New Year"><option value="lny_child">Child / niece / nephew</option><option value="lny_parent">Parents / grandparents</option><option value="lny_staff">Employee or building staff (business)</option><option value="lny_client">Client's children / business contact</option></optgroup>
+        <optgroup label="Weddings"><option value="wedding_friend">Wedding — friend</option><option value="wedding_family">Wedding — close family</option><option value="wedding_colleague">Wedding — colleague</option></optgroup>
+        <optgroup label="Other"><option value="birthday_elder">Elder's milestone birthday</option><option value="baby">New baby / full-month celebration</option><option value="opening">Grand opening (friend's business)</option><option value="graduation">Graduation</option><option value="funeral">Funeral (white envelope)</option></optgroup>
+      </select>
+      <div class="row">
+        <div><label for="hbClose">Closeness</label><select id="hbClose"><option value="normal">Normal</option><option value="close">Very close</option><option value="distant">Acquaintance</option></select></div>
+        <div><label for="hbCur">Currency</label><select id="hbCur"><option>USD</option><option>CAD</option><option>HKD</option><option>SGD</option><option>MYR</option><option>CNY</option><option>AUD</option><option>GBP</option><option>EUR</option></select></div>
+      </div>
+      <button class="btn btn-red" type="submit" style="margin-top:16px">Calculate</button>
+    </form>
+    <div class="result" id="hbResult" aria-live="polite"></div>
+  </div>
+  <div class="ad" data-slot="inArticle"></div>
+  <h2>The five golden rules</h2>
+  <ol>
+    <li><b>Even amounts</b> for happy occasions ("good things come in pairs"). Odd amounts are for funerals.</li>
+    <li><b>No 4s</b> anywhere — not $40, not $140, not $400.</li>
+    <li><b>Favour 8, 6 and 9:</b> $88, $168, $188, $288, $388, $888.</li>
+    <li><b>New, crisp notes.</b> Visit the bank before New Year.</li>
+    <li><b>Give and receive with both hands</b>, and don't open an envelope in front of the giver.</li>
+  </ol>
+  <h2>Red envelopes at work</h2>
+  <p>In Hong Kong, Singapore and Malaysia, employers commonly give <em>lai see</em> to staff, cleaners and building security after New Year. Married managers are expected to give to unmarried juniors. For businesses entering these markets, a written hongbao policy avoids awkwardness — our <a href="growth-desk.html">free growth plan</a> includes one.</p>
+  <h2>FAQ</h2>
+  <details><summary>How much for a wedding?</summary><div>A common rule is at least the cost of your seat at the banquet, rounded to a lucky figure. Close family give substantially more.</div></details>
+  <details><summary>Digital red envelopes?</summary><div>WeChat and other apps cap single digital red packets (WeChat's classic cap is ¥200), so large gifts are often sent as multiple packets or transfers. Lucky amounts like ¥88 and ¥168 are popular.</div></details>
+</div>
+{% include aside.html %}
+</div>
