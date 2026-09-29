@@ -1,0 +1,38 @@
+<!--{"title": "Business Number Checker — Score Any Phone, Address, Plate or Domain (Chinese Numerology) | 585555", "description": "Score any phone number, street address, suite, licence plate, price or numeric domain from 0–100 using Mandarin and Cantonese sound meanings. Digit-by-digit breakdown and combinations like 168, 518 and 888.", "keywords": "lucky phone number checker, chinese number meaning, lucky address number, licence plate lucky number, number 8 meaning, 4 unlucky", "type": "WebApplication", "crumb": "Business Number Checker", "priority": "0.9"}-->
+<div class="phead"><div class="wrap">{{CRUMB}}<h1>Business Number Checker</h1><p class="lead">What does your phone number, storefront address or licence plate say to a Chinese-speaking customer? Get a 0–100 score and a digit-by-digit reading.</p></div></div>
+<div class="wrap layout">
+<div class="prose">
+  <div class="card">
+    <form id="numForm">
+      <div class="row">
+        <div><label for="numInput">Number to check</label><input id="numInput" type="text" inputmode="numeric" required placeholder="e.g. 416-555-1688"></div>
+        <div><label for="numType">What is it?</label><select id="numType"><option>Phone number</option><option>Street address / suite</option><option>Licence plate</option><option>Price</option><option>Numeric domain</option><option>Date</option><option>Other</option></select></div>
+      </div>
+      <button class="btn btn-red" type="submit" style="margin-top:16px">Check my number</button>
+      <p class="small muted" style="margin-top:12px">Try: <button type="button" class="pill" data-try="585555">585555</button> <button type="button" class="pill" data-try="168">168</button> <button type="button" class="pill" data-try="518">518</button> <button type="button" class="pill" data-try="8888">8888</button> <button type="button" class="pill" data-try="1414">1414</button></p>
+    </form>
+    <div class="result" id="numResult" aria-live="polite"></div>
+  </div>
+  <div class="ad" data-slot="inArticle"></div>
+  <h2>How the score is calculated</h2>
+  <ol>
+    <li><b>Digit weights.</b> Each digit adds or subtracts points: 8 (+8), 6 and 9 (+5), 2 (+3), 3 (+2), 0/1/5 (+1), 7 (0), 4 (−10).</li>
+    <li><b>Combinations.</b> Known phrases such as 168, 518, 888, 1314 add points; 14, 24, 74, 250 and 748 subtract.</li>
+    <li><b>Ending.</b> The last digit carries extra weight — people remember endings.</li>
+    <li><b>Repeats.</b> Runs of three or more good digits (666, 888) add a bonus.</li>
+  </ol>
+  <p>Scores above 70 are "very auspicious"; below 40 we suggest changing the number where it's cheap to do so (a phone line or suite letter is easier to change than a street address).</p>
+  <h2>Where numbers matter most</h2>
+  <div class="table-wrap"><table><thead><tr><th>Asset</th><th>Impact</th><th>Tip</th></tr></thead><tbody>
+    <tr><td>Business phone</td><td>High</td><td>Ending in 88 or 168 is memorable and auspicious; vanity numbers are cheap to acquire.</td></tr>
+    <tr><td>Retail / office address</td><td>High for real estate</td><td>Units with 4 are harder to lease or sell to Chinese buyers in many markets.</td></tr>
+    <tr><td>Price tags</td><td>High</td><td>Use the <a href="lucky-price-optimizer.html">Lucky Price Optimizer</a>.</td></tr>
+    <tr><td>Licence plate</td><td>Medium–High</td><td>Plates are traded for large sums in Hong Kong, Singapore and Malaysia.</td></tr>
+    <tr><td>Domain name</td><td>Medium</td><td>Short numeric .com names are popular with Chinese audiences. <a href="numeric-domains-explained.html">Why</a>.</td></tr>
+  </tbody></table></div>
+  <h2>FAQ</h2>
+  <details><summary>Mandarin or Cantonese?</summary><div>We blend both. Where they differ (e.g. 28 "easy prosperity" is a Cantonese reading; 38 can be an insult in Mandarin but "prosper in life" in Cantonese), we note it.</div></details>
+  <details><summary>Is a low score "bad luck"?</summary><div>No. It measures how customers are likely to perceive the number — a marketing signal, not a prediction.</div></details>
+</div>
+{{ASIDE}}
+</div>

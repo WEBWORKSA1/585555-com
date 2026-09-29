@@ -1,0 +1,32 @@
+<!--{"title": "Lucky Price Optimizer — Auspicious Chinese Price Points (Free Tool) | 585555", "description": "Enter any price and get the nearest auspicious price points for Chinese-speaking customers: endings in 8, 88, 168, no unlucky 4s. Free, instant, 9 currencies.", "keywords": "lucky price, chinese pricing, price ending 8, auspicious price, 88 price, charm pricing chinese", "type": "WebApplication", "crumb": "Lucky Price Optimizer", "priority": "0.9"}-->
+<div class="phead"><div class="wrap">{{CRUMB}}<h1>Lucky Price Optimizer</h1><p class="lead">Swap charm pricing for prosperity pricing. Enter a price, get the nearest auspicious alternatives your Chinese-speaking customers will notice.</p></div></div>
+<div class="wrap layout">
+<div class="prose">
+  <div class="card">
+    <form id="priceForm">
+      <div class="row">
+        <div><label for="priceInput">Current or target price</label><input id="priceInput" type="number" step="0.01" min="0.01" required placeholder="e.g. 39.99" value="39.99"></div>
+        <div><label for="priceCur">Currency</label><select id="priceCur"><option>USD</option><option>CAD</option><option>CNY</option><option>HKD</option><option>SGD</option><option>MYR</option><option>AUD</option><option>GBP</option><option>EUR</option></select></div>
+      </div>
+      <button class="btn btn-red" type="submit" style="margin-top:16px">Find lucky prices</button>
+    </form>
+    <div class="result" id="priceResult" aria-live="polite"></div>
+  </div>
+  <div class="ad" data-slot="inArticle"></div>
+  <h2>How it works</h2>
+  <p>The optimizer searches roughly 12% below to 15% above your price. It keeps only candidates that (1) contain no digit 4, and (2) end in a strong digit or pair — 8, 88, 68, 98, 66 or 99. Each candidate is scored with our <a href="business-number-checker.html">number engine</a> and ranked by score minus distance from your original price, so you don't give away margin for luck.</p>
+  <h2>Why lucky pricing works</h2>
+  <p>Western "charm pricing" ($9.99) exploits left-digit bias. Chinese-speaking shoppers respond to a second layer: the <em>sound</em> of the number. 8 (bā) sounds like 发 (fā, "to prosper"); 6 (liù) like 流 ("smooth flow"); 9 (jiǔ) like 久 ("long-lasting"). A menu set at $18.88 signals care; one at $14.44 signals the opposite.</p>
+  <table><thead><tr><th>Instead of</th><th>Try</th><th>Why</th></tr></thead><tbody>
+    <tr><td>$39.99</td><td>$38.88</td><td>Triple 8 ending, no 9-9 "cheap" look</td></tr>
+    <tr><td>$45</td><td>$46.88 or $48</td><td>Removes the 4 at the front</td></tr>
+    <tr><td>$250</td><td>$258 or $268</td><td>250 is slang for "fool"</td></tr>
+    <tr><td>¥1,999</td><td>¥1,888 or ¥1,688</td><td>"Prosper all the way" (一路发)</td></tr>
+  </tbody></table>
+  <h2>FAQ</h2>
+  <details><summary>Does this work for non-Chinese customers too?</summary><div>Yes — prices ending in 8 still read as deliberate and premium. There's little downside with Western shoppers and clear upside with Chinese-speaking ones.</div></details>
+  <details><summary>Should I remove every 4?</summary><div>On prices, suite numbers and phone numbers aimed at Chinese customers, yes where practical. A 4 inside a long SKU or barcode matters far less.</div></details>
+  <details><summary>Is there a "best" lucky price?</summary><div>Endings of 8, 88 and 888 are the strongest; 168 ("prosper all the way") and 518 ("I will prosper") are classic promotional numbers.</div></details>
+</div>
+{{ASIDE}}
+</div>
