@@ -1,0 +1,106 @@
+{% assign canonical = site.url | append: page.url %}{% assign ptype = page.type | default: "WebPage" %}<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ page.title | escape }}</title>
+<meta name="description" content="{{ page.description | escape }}">
+<meta name="keywords" content="{{ page.keywords | escape }}">
+<link rel="canonical" href="{{ canonical }}">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#B3202A">
+<meta property="og:type" content="{% if ptype == "Article" %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="585555.com">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.description | escape }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{{ site.url }}/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v={{ site.time | date: "%Y%m%d" }}">
+<script type="application/ld+json">{% assign canonical = site.url | append: page.url %}{% assign ptype = page.type | default: "WebPage" %}{% if page.url == "/" %}{"@context": "https://schema.org", "@type": "WebSite", "name": "585555.com", "url": "https://585555.com/", "description": {{ page.description | jsonify }}, "potentialAction": {"@type": "SearchAction", "target": "https://585555.com/business-number-checker.html?n={query}", "query-input": "required name=query"}}{% else %}{"@context": "https://schema.org", "@type": {{ ptype | jsonify }}, "name": {{ page.title | jsonify }}, "description": {{ page.description | jsonify }}, "url": {{ canonical | jsonify }}, "inLanguage": "en", "isPartOf": {"@type": "WebSite", "name": "585555.com", "url": "https://585555.com/"}, "publisher": {"@type": "Organization", "name": "585555.com", "url": "https://585555.com/"}{% if ptype == "Article" %}, "headline": {{ page.title | jsonify }}, "datePublished": "{{ page.date_published | default: site.time | date: '%Y-%m-%d' }}", "dateModified": "{{ site.time | date: '%Y-%m-%d' }}", "author": {"@type": "Organization", "name": "585555 Editorial Team"}{% endif %}{% if ptype == "WebApplication" %}, "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}{% endif %}}{% endif %}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="interest" role="note">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership — <a href="https://web.works/contact" target="_blank" rel="noopener">contact here</a></div>
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="585555.com home"><span class="seal">我发</span><span>585555<small>I PROSPER · 我发</small></span></a>
+    <button class="iconbtn menu-toggle" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="tools.html">Tools</a>
+      <a href="guides.html">Guides</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="videos.html">Videos</a>
+      <a href="premium-numbers.html">Lucky Numbers</a>
+      <a href="contests.html">Contests</a>
+      <a href="support.html">Support</a>
+      <a class="btn btn-red btn-sm" href="growth-desk.html">Free Growth Plan</a>
+      <button class="iconbtn" id="themeBtn" aria-label="Toggle dark mode" title="Toggle dark mode">☾</button>
+    </nav>
+  </div>
+</header>
+<main id="main">
+{{ content }}</main>
+<footer class="ftr">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html" style="color:#fff"><span class="seal">我发</span><span>585555<small style="color:#bba">I PROSPER · 我发</small></span></a>
+        <p style="margin-top:14px">Free tools and guides for businesses and creators who sell to Chinese-speaking and Asian customers — pricing, numbers, dates, gifting and campaigns.</p>
+        <form class="js-form inline-form" data-subject="Newsletter signup (footer)" data-ok="You're in! Watch for the Prosperity Brief.">
+          <input type="email" name="email" required placeholder="Your email" aria-label="Email">
+          <input type="hidden" name="List" value="Prosperity Brief">
+          <input class="hp" type="text" name="_hp" tabindex="-1" autocomplete="off">
+          <button class="btn btn-gold btn-sm" type="submit">Subscribe</button>
+          <div class="form-msg" role="status"></div>
+        </form>
+      </div>
+      <div><h4>Tools</h4><ul>
+        <li><a href="lucky-price-optimizer.html">Lucky Price Optimizer</a></li>
+        <li><a href="business-number-checker.html">Business Number Checker</a></li>
+        <li><a href="opening-date-finder.html">Opening Date Finder</a></li>
+        <li><a href="red-envelope-calculator.html">Red Envelope Calculator</a></li>
+        <li><a href="gift-etiquette-checker.html">Gift Etiquette Checker</a></li>
+        <li><a href="meaning-of-585555.html">Meaning of 585555</a></li>
+      </ul></div>
+      <div><h4>Work with us</h4><ul>
+        <li><a href="growth-desk.html">Free Growth Plan</a></li>
+        <li><a href="premium-numbers.html">Lucky Numbers &amp; Domains</a></li>
+        <li><a href="advertise.html">Advertise &amp; Sponsor</a></li>
+        <li><a href="support.html">Support / Donate</a></li>
+        <li><a href="contests.html">Contests &amp; Prizes</a></li>
+        <li><a href="careers.html">Careers &amp; Talent</a></li>
+      </ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="legal.html">Trademark &amp; Copyright</a></li>
+      </ul></div>
+    </div>
+    <div class="legal">
+      <p>© <span class="yr">2026</span> 585555.com. All rights reserved. Original text, tools and design are protected by copyright. "585555" is used solely as a numeral and domain name; no trademark rights in the numeral are claimed, and this site is not affiliated with, endorsed by or connected to any company, brand or platform whose name contains similar numbers (including 58.com / 58同城 or the "555" brand). Third-party names are used descriptively only. Cultural information is educational and not financial, legal or religious advice. <a href="legal.html">Full disclosure</a>.</p>
+      <p>Interested in this website, the domain name, sponsorship, advertising or partnership? <a href="https://web.works/contact" target="_blank" rel="noopener">Contact here</a>.</p>
+    </div>
+  </div>
+</footer>
+<div class="cookie" id="cookie" role="dialog" aria-label="Cookie consent">
+  <p>We use cookies for analytics and to show ads (Google AdSense) that keep our tools free. See our <a href="privacy.html">privacy policy</a>.</p>
+  <button class="btn btn-red btn-sm" id="ckYes">Accept</button><button class="btn btn-ghost btn-sm" id="ckNo">Decline</button>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<button class="iconbtn totop" id="toTop" aria-label="Back to top">↑</button>
+<script src="assets/js/config.js?v={{ site.time | date: "%Y%m%d" }}"></script>
+<script src="assets/js/lunar-data.js?v={{ site.time | date: "%Y%m%d" }}"></script>
+<script src="assets/js/numbers.js?v={{ site.time | date: "%Y%m%d" }}"></script>
+<script src="assets/js/search-index.js?v={{ site.time | date: "%Y%m%d" }}"></script>
+<script src="assets/js/main.js?v={{ site.time | date: "%Y%m%d" }}"></script>
+</body>
+</html>

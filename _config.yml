@@ -1,0 +1,8 @@
+title: "585555 — I Prosper"
+url: "https://585555.com"
+plugins:
+  - jekyll-sitemap
+exclude:
+  - docs
+  - README.md
+  - "*.py"
