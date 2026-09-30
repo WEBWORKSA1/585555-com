@@ -1,5 +1,6 @@
 title: "585555 — I Prosper"
 url: "https://585555.com"
+baseurl: ""
 plugins:
   - jekyll-sitemap
 exclude:
