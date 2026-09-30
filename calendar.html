@@ -1,5 +1,12 @@
-<!--{"title": "Chinese Marketing Calendar 2026–2027: Lunar New Year, 520, 618, Mid-Autumn, 11.11 | 585555", "description": "Every Chinese festival and shopping date that matters for marketers in 2026–2027 — Lunar New Year 6 Feb 2027 (Year of the Goat), God of Wealth Day, 520, 618, Qixi, Ghost Month, Mid-Autumn, Golden Week and 11.11 — with campaign lead times.", "keywords": "chinese marketing calendar 2027, lunar new year 2027 date, year of the goat 2027, 618 2027, 11.11 marketing, mid-autumn festival 2027, ghost month 2027", "type": "Article", "crumb": "Campaign Calendar", "priority": "0.9"}-->
-<div class="phead"><div class="wrap">{{CRUMB}}<h1>Chinese Marketing Calendar 2026–2027</h1><p class="lead">Festival and shopping dates with suggested lead times. Lunar dates are calculated, not estimated. Updated {{UPDATED}}.</p></div></div>
+---
+layout: default
+title: "Chinese Marketing Calendar 2026–2027: Lunar New Year, 520, 618, Mid-Autumn, 11.11 | 585555"
+description: "Every Chinese festival and shopping date that matters for marketers in 2026–2027 — Lunar New Year 6 Feb 2027 (Year of the Goat), God of Wealth Day, 520, 618, Qixi, Ghost Month, Mid-Autumn, Golden Week and 11.11 — with campaign lead times."
+keywords: "chinese marketing calendar 2027, lunar new year 2027 date, year of the goat 2027, 618 2027, 11.11 marketing, mid-autumn festival 2027, ghost month 2027"
+type: "Article"
+crumb: "Campaign Calendar"
+---
+<div class="phead"><div class="wrap">{% include crumb.html %}<h1>Chinese Marketing Calendar 2026–2027</h1><p class="lead">Festival and shopping dates with suggested lead times. Lunar dates are calculated, not estimated. Updated {{ site.time | date: "%B %Y" }}.</p></div></div>
 <div class="wrap layout">
 <div class="prose">
   <div class="card"><p class="small muted" style="margin-bottom:6px">Lunar New Year (Year of the Goat) begins <b id="cnyLabel"></b></p><div class="countdown" id="cnyCountdown"></div></div>
@@ -35,5 +42,5 @@
   <p class="small muted">Festival names are used descriptively. "11.11", "618" and similar shopping events are industry-wide promotions; some related marks are registered by third parties. We are not affiliated with any platform.</p>
   <p><a class="btn btn-red" href="growth-desk.html">Get a campaign plan for these dates →</a></p>
 </div>
-{{ASIDE}}
+{% include aside.html %}
 </div>

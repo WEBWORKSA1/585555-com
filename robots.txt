@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /_src/
 Disallow: /docs/
 
 Sitemap: https://585555.com/sitemap.xml

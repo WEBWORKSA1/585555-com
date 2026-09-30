@@ -1,5 +1,11 @@
-<!--{"title": "Terms of Use | 585555", "description": "Terms of use for 585555.com, its tools, content, forms, donations, contests and advertising.", "keywords": "terms of use", "crumb": "Terms of Use", "priority": "0.3"}-->
-<div class="phead"><div class="wrap">{{CRUMB}}<h1>Terms of use</h1><p class="meta">Last updated {{UPDATED}}</p></div></div>
+---
+layout: default
+title: "Terms of Use | 585555"
+description: "Terms of use for 585555.com, its tools, content, forms, donations, contests and advertising."
+keywords: "terms of use"
+crumb: "Terms of Use"
+---
+<div class="phead"><div class="wrap">{% include crumb.html %}<h1>Terms of use</h1><p class="meta">Last updated {{ site.time | date: "%B %Y" }}</p></div></div>
 <div class="wrap layout"><div class="prose">
   <h2>1. Acceptance</h2><p>By using 585555.com you agree to these terms. If you don't agree, please don't use the site.</p>
   <h2>2. Informational use only</h2><p>Content and tools describe cultural associations and general business practices. They are not financial, investment, legal, tax, religious or professional advice, and they don't predict outcomes. Verify important decisions with qualified professionals.</p>
@@ -10,4 +16,4 @@
   <h2>7. Third-party links &amp; ads</h2><p>We're not responsible for third-party sites, products or advertisements.</p>
   <h2>8. Disclaimer &amp; liability</h2><p>The site is provided "as is". To the extent permitted by law, 585555.com is not liable for indirect or consequential losses arising from use of the site.</p>
   <h2>9. Changes</h2><p>We may update these terms; continued use means acceptance.</p>
-</div>{{ASIDE}}</div>
+</div>{% include aside.html %}</div>

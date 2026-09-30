@@ -1,5 +1,11 @@
-<!--{"title": "Privacy Policy | 585555", "description": "How 585555.com collects, uses and protects personal information, cookies, Google AdSense and analytics.", "keywords": "privacy policy", "crumb": "Privacy Policy", "priority": "0.3"}-->
-<div class="phead"><div class="wrap">{{CRUMB}}<h1>Privacy policy</h1><p class="meta">Last updated {{UPDATED}}</p></div></div>
+---
+layout: default
+title: "Privacy Policy | 585555"
+description: "How 585555.com collects, uses and protects personal information, cookies, Google AdSense and analytics."
+keywords: "privacy policy"
+crumb: "Privacy Policy"
+---
+<div class="phead"><div class="wrap">{% include crumb.html %}<h1>Privacy policy</h1><p class="meta">Last updated {{ site.time | date: "%B %Y" }}</p></div></div>
 <div class="wrap layout"><div class="prose">
   <h2>What we collect</h2>
   <ul><li><b>Form submissions:</b> the details you type (name, email, message and form answers) — used only to respond to you and deliver what you requested.</li><li><b>Newsletter:</b> your email, if you subscribe. Unsubscribe any time.</li><li><b>Analytics &amp; ads cookies:</b> only after consent.</li></ul>
@@ -20,4 +26,4 @@
   <p>This site is not directed to children under 13 (or 16 in the EU), and contests are for adults 18+.</p>
   <h2>Changes</h2>
   <p>We'll post updates here with a new date.</p>
-</div>{{ASIDE}}</div>
+</div>{% include aside.html %}</div>
